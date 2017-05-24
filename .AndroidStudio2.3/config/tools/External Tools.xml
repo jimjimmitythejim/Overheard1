@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="adb uninstall" description="fixing myfirebaseapp instantiation error" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="adb" />
+      <option name="PARAMETERS" value="uninstall overheardsite.myapplication" />
+      <option name="WORKING_DIRECTORY" />
+    </exec>
+  </tool>
+</toolSet>
