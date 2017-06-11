@@ -3,7 +3,7 @@
     <exec>
       <option name="COMMAND" value="adb" />
       <option name="PARAMETERS" value="uninstall overheardsite.myapplication" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
 </toolSet>

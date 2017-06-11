@@ -1,7 +1,10 @@
 package overheardsite.myapplication;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -23,6 +26,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextClock;
 import android.widget.TextView;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.TimeZone;
 
 import com.firebase.client.Firebase;
@@ -45,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
     public long numberOfPeople;
     public long count = 0;
+    public long count2 = 0;
+    public long total = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,10 +63,157 @@ public class MainActivity extends AppCompatActivity {
 
         // widgets
         Button wait4prayer = (Button) findViewById(R.id.sendDataButton);
-        TextClock clock1 = null;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            clock1 = (TextClock) findViewById(R.id.textClock);
+        TextView tot = (TextView) findViewById(R.id.tot);
+
+        TextView time1 = (TextView) findViewById(R.id.textView10);
+        TextView time2 = (TextView) findViewById(R.id.textView16);
+        TextView time3 = (TextView) findViewById(R.id.textView17);
+
+        TimeZone tz = TimeZone.getDefault();
+        Date now = new Date();
+        int offsetFromUtc = tz.getOffset(now.getTime()) / 1000 / 60 / 60; // should get timezone difference in hours
+
+        if (offsetFromUtc == -7) {
+            time1.setText("5:00 a.m.");
+            time2.setText("11:00 a.m.");
+            time3.setText("6:00 p.m.");
         }
+        else if (offsetFromUtc == 14) {
+            time1.setText("2:00 a.m.");
+            time2.setText("8:00 a.m.");
+            time3.setText("3:00 p.m.");
+        }
+        else if (offsetFromUtc == -4) {
+            time1.setText(R.string.one);
+            time2.setText(R.string.two);
+            time3.setText(R.string.three);
+        }
+        /*else if (tz == TimeZone.getTimeZone("Pacific/Chatham")) {
+            time1.setText("12:45 p.m.");
+            time2.setText("6:45 a.m.");
+            time3.setText("9:00 p.m.");
+        }*/
+        else if (offsetFromUtc == 13) {
+            time1.setText("1:00 a.m.");
+            time2.setText("7:00 a.m.");
+            time3.setText("2:00 p.m.");
+        }
+        /*else if (tz == TimeZone.getTimeZone("Australia/Lord_Howe")) {
+            time1.setText("10:30 p.m.");
+            time2.setText("4:30 a.m.");
+            time3.setText("11:30 a.m.");
+        }*/
+        else if (offsetFromUtc == 10) {
+            time1.setText("10:00 p.m.");
+            time2.setText("4:00 a.m.");
+            time3.setText("11:00 a.m.");
+        }
+        /*else if (tz == TimeZone.getTimeZone("Australia/Adelaide")) {
+            time1.setText("9:30 p.m.");
+            time2.setText("3:30 a.m.");
+            time3.setText("10:30 a.m.");
+        }*/
+        else if (offsetFromUtc == 9) {
+            time1.setText("9:00 p.m.");
+            time2.setText("3:00 a.m.");
+            time3.setText("10:00 a.m.");
+        }
+        /*else if (tz == TimeZone.getTimeZone("Australia/Eucla")) {
+            time1.setText("8:45 p.m.");
+            time2.setText("2:45 a.m.");
+            time3.setText("9:45 a.m.");
+        }*/
+        /*else if (tz == TimeZone.getTimeZone("Asia/Pyongyang")) {
+            time1.setText("8:30 p.m.");
+            time2.setText("2:30 a.m.");
+            time3.setText("9:30 a.m.");
+        }*/
+        else if (offsetFromUtc == 8) {
+            time1.setText("8:00 p.m.");
+            time2.setText("2:00 a.m.");
+            time3.setText("9:00 a.m.");
+        }
+        else if (offsetFromUtc == 7) {
+            time1.setText("7:00 p.m.");
+            time2.setText("1:00 a.m.");
+            time3.setText("8:00 a.m.");
+        }
+        else if (offsetFromUtc == 6) {
+            time1.setText("6:00 p.m.");
+            time2.setText("12:00 a.m.");
+            time3.setText("7:00 a.m.");
+        }
+        /*else if (tz == TimeZone.getTimeZone("Asia/Kathmandu")) {
+            time1.setText("5:45 p.m.");
+            time2.setText("11:45 p.m.");
+            time3.setText("6:45 a.m.");
+        }*/
+        else if (offsetFromUtc == 5) {
+            time1.setText("5:00 p.m.");
+            time2.setText("11:00 p.m.");
+            time3.setText("6:00 a.m.");
+        }
+        /*else if (tz == TimeZone.getTimeZone("Asia/Tehran")) {
+            time1.setText("4:30 p.m.");
+            time2.setText("10:30 p.m.");
+            time3.setText("5:30 a.m.");
+        }*/
+        else if (offsetFromUtc == 4) {
+            time1.setText("4:00 p.m.");
+            time2.setText("10:00 p.m.");
+            time3.setText("5:00 a.m.");
+        }
+        else if (offsetFromUtc == 3) {
+            time1.setText("3:00 p.m.");
+            time2.setText("9:00 p.m.");
+            time3.setText("4:00 a.m.");
+        }
+        else if (offsetFromUtc == 2) {
+            time1.setText("2:00 p.m.");
+            time2.setText("8:00 p.m.");
+            time3.setText("3:00 a.m.");
+        }
+        else if (offsetFromUtc == 1) {
+            time1.setText("1:00 p.m.");
+            time2.setText("7:00 p.m.");
+            time3.setText("2:00 a.m.");
+        }
+        else if (offsetFromUtc == 0) {
+            time1.setText("12:00 p.m.");
+            time2.setText("6:00 p.m.");
+            time3.setText("1:00 a.m.");
+        }
+        else if (offsetFromUtc == -3) {
+            time1.setText("9:00 a.m.");
+            time2.setText("3:00 p.m.");
+            time3.setText("10:00 p.m.");
+        }
+        else if (offsetFromUtc == -5) {
+            time1.setText("7:00 a.m.");
+            time2.setText("1:00 p.m.");
+            time3.setText("8:00 p.m.");
+        }
+        else if (offsetFromUtc == -6) {
+            time1.setText("6:00 a.m.");
+            time2.setText("12:00 a.m.");
+            time3.setText("7:00 p.m.");
+        }
+        else if (offsetFromUtc == -8) {
+            time1.setText("4:00 a.m.");
+            time2.setText("10:00 a.m.");
+            time3.setText("5:00 p.m.");
+        }
+        else if (offsetFromUtc == -9) {
+            time1.setText("3:00 a.m.");
+            time2.setText("9:00 a.m.");
+            time3.setText("4:00 p.m.");
+        }
+        else if (offsetFromUtc == -10) {
+            time1.setText("2:00 a.m.");
+            time2.setText("8:00 a.m.");
+            time3.setText("3:00 p.m.");
+        }
+
         /*TextClock clock2 = null;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             clock2 = new TextClock(this);
@@ -74,9 +227,8 @@ public class MainActivity extends AppCompatActivity {
             clock4 = new TextClock(this);
         }*/
         // textclock is only available after api lvl 17; the min you have set is 15
-        TextView description = (TextView) findViewById(R.id.WhenToGather);
-        TextView bibleQuote = (TextView) findViewById(R.id.textView6);
         //Toolbar actionbar = new Toolbar(this);
+
 
         /*
         Resources r = getResources();
@@ -204,9 +356,7 @@ public class MainActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             clock1.setFormat12Hour("hh:mm:ss a");
         }*/
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            clock1.setTimeZone(TimeZone.getDefault().toString());
-        }
+
         // NULL POINTER EXCEPTION IS BECAUSE OF API CONSTRAINT
 
 /*
@@ -279,15 +429,15 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(mainLayout);
 
             // Firebase variable
-            final Firebase mRef2;
+            //final Firebase mRef2;
 
             // was using a different way to get the id
             // final String id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
-            final TelephonyManager id = (TelephonyManager) getBaseContext().getSystemService(Context.TELEPHONY_SERVICE);
+            //final TelephonyManager id = (TelephonyManager) getBaseContext().getSystemService(Context.TELEPHONY_SERVICE);
 
             // android suggested that the IMEI_Number_Holder be an array; idk why
-            final String[] tmDevice = new String[1];
+            //final String[] tmDevice = new String[1];
 /*
             mSendData = (Button) findViewById(R.id.sendDataButton);
 //            if (mSendData.getParent() != null)
@@ -313,7 +463,7 @@ public class MainActivity extends AppCompatActivity {
 //                mainLayout.addView(time);
             }
 */
-            mRef2 = new Firebase("https://my-awesome-project-ce89c.firebaseio.com/");
+            //////////////////mRef2 = new Firebase("https://my-awesome-project-ce89c.firebaseio.com/");
 
             // just doing this to make sure the id is gotten before the onclicklistener sends the value to the database
             //  // //  tmDevice[0] = "" + id.getDeviceId();
@@ -324,14 +474,17 @@ public class MainActivity extends AppCompatActivity {
 
             wait4prayer.setOnClickListener(groupListener);
 
+        /*
             // gets imei, device id.... DON'T KNOW IF THIS WORKS, but idk why it wouldn't
             groupListener.addOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     tmDevice[0] = "" + id.getDeviceId();
+
+
                 }
             });
-
+*/
 
             // putting in data with a click just to test whether or not the numberOfPeople will be counted and shown in the HowManyPrayed TextView
         /*
@@ -344,7 +497,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             */
-
+/*
             groupListener.addOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -357,10 +510,25 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+*/
 
-            groupListener.addOnClickListener(new View.OnClickListener() {
+        SharedPreferences sharedPreferences = getSharedPreferences("counter", Context.MODE_PRIVATE);
+
+        SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
+
+        count2 = sharedPreferences.getLong("count", 0);
+
+        total = pref.getLong("total", 0);
+
+        groupListener.addOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    count2++;
+
+                    total++;
+
+                    System.out.println("banana" + count2 + total);
 
                     Intent intent = new Intent(MainActivity.this, Waiting4Prayer1.class);
 
@@ -369,7 +537,35 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+        long millis = System.currentTimeMillis();
+        Calendar c = Calendar.getInstance();
+        c.setTimeZone(TimeZone.getTimeZone("Africa/Casablanca"));
+        c.setTimeInMillis(millis);
 
+        int hours = c.get(Calendar.HOUR_OF_DAY);
+        int minutes = c.get(Calendar.MINUTE);
+        int seconds = c.get(Calendar.SECOND);
+
+        // resets count to 0
+        if (hours == 12 || hours == 18|| hours == 1) { // resets at 8:02 am, 2:02 pm, and 9:02 pm EST;
+            // ALSO SETTING TOTAL NUMBER OF PRAYERS TO TEXTVIEW (not doing it when they hit the button cause they will see the number decrease if someone else leaves the waiting for prayer activity
+            if (minutes == 2) { // resetting just after prayer instead of before because people might not get counted
+                // someone has to be on the mainactivity at this time for the count to be reset though
+
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                editor.putLong("count", 0);
+                editor.apply();
+
+                tot.setText(String.valueOf(total));
+
+            }
+        }
+
+            tot.setText(String.valueOf(total));
+
+
+/*
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference myRef = database.getReference();
             //You must remember to remove the listener when you finish using it, also to keep track of changes you can use the ChildChange
@@ -377,8 +573,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                     numberOfPeople = dataSnapshot.getChildrenCount();
-                    count++;
-                    DataHolder.setData(count);
+                    //count++;
+                    //DataHolder.setData(count);
                 }
 
                 @Override
@@ -389,8 +585,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
                     numberOfPeople = dataSnapshot.getChildrenCount();
-                    count--;
-                    DataHolder.setData(count);
+                    //count--;
+                    //DataHolder.setData(count);
                 }
 
                 @Override
@@ -403,7 +599,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
-
+*/
 /*
         DatabaseReference fbDb = FirebaseDatabase.getInstance().getReference();
 
@@ -425,5 +621,53 @@ public class MainActivity extends AppCompatActivity {
         // data2 = Integer.toString(count);
         // DataHolder.setData(data2);
 
+        /*
+        // deleting database at these times of the day in case someone puts their info into the database and closes the app without removing it
+        // i have no idea if this works
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+
+        TextClock clock2 = null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            clock2 = new TextClock(this);
+        }
+
+        // setting it so the clock has time only from est just so i can delete data in the database at certain times
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            clock2.setTimeZone("America/New_York");
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            if (clock2.getFormat24Hour() == "10:00:00" || clock2.getFormat24Hour() == "14:00:00" || clock2.getFormat24Hour() == "23:00:00") {
+
+                // do i need to run this the number of times as there are values?
+                for (int i = 0; i < DataHolder.getData(); i++) {
+
+                    databaseReference.removeValue();
+                }
+            }
+        }
+        */
+
+    }
+
+    @Override
+    protected void onPause() { // onPause() will be called whenever you leave your activity, temporary or permanently.
+
+        super.onPause();
+
+
+        SharedPreferences sharedPreferences = getSharedPreferences("counter", Context.MODE_PRIVATE);
+
+        SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putLong("count", count2);
+        editor.apply();
+
+        SharedPreferences.Editor edits = pref.edit();
+        edits.putLong("total", total);
+        edits.apply();
+
+        editor.commit();
     }
 }

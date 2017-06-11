@@ -1,3 +1,6 @@
+package overheardsite.myapplication;
+
+import com.firebase.client.Firebase;
 import com.google.firebase.database.FirebaseDatabase;
 
 /**
@@ -9,6 +12,9 @@ public class MyFirebaseApp extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        Firebase.setAndroidContext(this);
+
     /* Enable disk persistence  */
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
     }

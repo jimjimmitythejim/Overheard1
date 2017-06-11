@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="port_large30_norma22_small15_font_size">30sp</dimen>
+    <dimen name="port_large26_normal18_small11_font_size">26sp</dimen>
+    <dimen name="port_large28_normal20_small13_font_size">28sp</dimen>
+    <dimen name="port_large25_normal17_small10_font_size">25sp</dimen>
+    <dimen name="port_large27_normal19_small12_font_size">27sp</dimen>
+    <dimen name="large_text29_port_font_size">29sp</dimen>
+    <dimen name="large_text24_port_font_size">24sp</dimen>
+    <dimen name="large_text22_port_font_size">22sp</dimen>
+    <dimen name="large_text21_port_font_size">21sp</dimen>
+    <dimen name="large_text20_port_font_size">20sp</dimen>
+    <dimen name="large_text19_port_font_size">19sp</dimen>
+    <dimen name="large_text18_port_font_size">18sp</dimen>
+    <dimen name="large_text17_port_font_size">17sp</dimen>
+    <dimen name="large_text31_port_font_size">31sp</dimen>
+    <dimen name="large_text32_port_font_size">32sp</dimen>
+    <dimen name="large_text33_port_font_size">33sp</dimen>
+    <dimen name="large_text34_port_font_size">34sp</dimen>
+    <dimen name="large_text35_port_font_size">35sp</dimen>
+    <dimen name="large_text36_port_font_size">36sp</dimen>
+    <dimen name="large_text37_port_font_size">37sp</dimen>
+    <dimen name="large_text38_port_font_size">38sp</dimen>
+    <dimen name="large_text39_port_font_size">39sp</dimen>
+    <dimen name="large_text40_port_font_size">40sp</dimen>
+    <dimen name="large_text23_port_font_size">23sp</dimen>
+    <dimen name="margin_5small_10normal_15large_20xlarge">5dp</dimen>
+
+
+</resources>
