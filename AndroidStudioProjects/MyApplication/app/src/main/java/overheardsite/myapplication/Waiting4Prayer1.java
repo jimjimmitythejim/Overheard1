@@ -39,7 +39,8 @@ import java.util.concurrent.TimeUnit;
 public class Waiting4Prayer1 extends AppCompatActivity {
 
     public long numberOfPeople;
-    public long count = 0;
+    public long count2 = 0;
+    public long total = 0;
 
 
     Firebase mRef;
@@ -303,30 +304,21 @@ public class Waiting4Prayer1 extends AppCompatActivity {
 //            }
 //        });
 
-        final SharedPreferences sharedPreferences = getSharedPreferences("counter", Context.MODE_PRIVATE);
-        final SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences sharedPreferences = getSharedPreferences("counter", Context.MODE_PRIVATE);
 
-        final SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
-        final SharedPreferences.Editor edits = pref.edit();
+        SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
+
+        count2 = sharedPreferences.getLong("count", 0);
+
+        total = pref.getLong("total", 0);
 
         compositeListener.addOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Long counts = sharedPreferences.getLong("count", 0);
+                count2++;
 
-                counts--;
-
-                editor.putLong("count", counts);
-                editor.apply();
-
-                Long total = pref.getLong("total", 0);
-                total--;
-
-                edits.putLong("total", total);
-                edits.apply();
-
-                System.out.println("banana" + counts + total);
+                total++;
 
                 Intent intent = new Intent(Waiting4Prayer1.this, MainActivity.class);
 
@@ -472,7 +464,7 @@ public class Waiting4Prayer1 extends AppCompatActivity {
         int minutes = c.get(Calendar.MINUTE);
         int seconds = c.get(Calendar.SECOND);
 
-            startActivity(change3);
+        startActivity(change3);
 
         if (hours == 12 && minutes == 0) { // starts activity at 8:00 am EST
             if (seconds > 0) {
@@ -496,5 +488,23 @@ public class Waiting4Prayer1 extends AppCompatActivity {
             }
         }
 
+    }
+
+    @Override
+    protected void onPause() { // onPause() will be called whenever you leave your activity, temporary or permanently.
+
+        super.onPause();
+
+        SharedPreferences sharedPreferences = getSharedPreferences("counter", Context.MODE_PRIVATE);
+
+        SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putLong("count", count2);
+        editor.apply();
+
+        SharedPreferences.Editor edits = pref.edit();
+        edits.putLong("total", total);
+        edits.apply();
     }
 }

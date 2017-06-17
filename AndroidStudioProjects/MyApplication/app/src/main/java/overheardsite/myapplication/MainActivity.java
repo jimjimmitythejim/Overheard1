@@ -487,16 +487,7 @@ public class MainActivity extends AppCompatActivity {
 */
 
             // putting in data with a click just to test whether or not the numberOfPeople will be counted and shown in the HowManyPrayed TextView
-        /*
-            groupListener.addOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Firebase mRefChild = mRef.child("random stuff");
 
-                    mRefChild.setValue("things");
-                }
-            });
-            */
 /*
             groupListener.addOnClickListener(new View.OnClickListener() {
 
@@ -528,8 +519,6 @@ public class MainActivity extends AppCompatActivity {
 
                     total++;
 
-                    System.out.println("banana" + count2 + total);
-
                     Intent intent = new Intent(MainActivity.this, Waiting4Prayer1.class);
 
                     startActivity(intent);
@@ -557,13 +546,10 @@ public class MainActivity extends AppCompatActivity {
                 editor.putLong("count", 0);
                 editor.apply();
 
-                tot.setText(String.valueOf(total));
-
             }
         }
 
-            tot.setText(String.valueOf(total));
-
+        tot.setText(String.valueOf(total));
 
 /*
             FirebaseDatabase database = FirebaseDatabase.getInstance();

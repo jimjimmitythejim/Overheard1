@@ -1,122 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/prayerpic3hdpi"
     android:layout_height="match_parent"
-    tools:context="overheardsite.myapplication.Waiting4Prayer1"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:gravity="center"
+    tools:context="overheardsite.myapplication.Waiting4Prayer1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="158dp"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
         android:text="At the area specific times below this page will switch to the prayer. Keep this open just before then in order to join others in prayer."
         android:textColor="@color/navyblue"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:textSize="21sp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="52dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="24sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"/>
 
     <Button
         android:id="@+id/returnButton"
-        android:layout_width="239dp"
-        android:layout_height="77dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:text="Return to the Homepage"
         android:textColor="@color/navyblue"
-        android:textSize="17sp"
-        android:background="@color/red"
-        android:layout_marginStart="94dp"
-        android:layout_marginEnd="94dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="135dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="134dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView12"
-        android:layout_marginLeft="94dp"
-        android:layout_marginRight="94dp"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="19sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/red" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
         android:textColor="@color/navyblue"
-        android:textSize="15sp"
+        android:textSize="22sp"
         android:text="Prayer will begin at the following times in your location:"
         android:gravity="center"
         android:layout_marginStart="22dp"
-        android:layout_marginEnd="22dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="26dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="22dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp" />
+        android:layout_marginEnd="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:textColor="@color/navyblue"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="TextView"
-        android:layout_marginStart="25dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/textView11"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="25dp" />
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
         android:textColor="@color/navyblue"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="22dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:textColor="@color/navyblue"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginEnd="25dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/textView11"
-        android:layout_marginTop="22dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        android:layout_marginRight="25dp" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView" />
 
-</android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

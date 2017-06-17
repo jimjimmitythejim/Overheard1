@@ -1,113 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context="overheardsite.myapplication.Prayer3"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:background="@drawable/prayerpic7hdpi"
+    tools:context="overheardsite.myapplication.Prayer3">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="334dp"
-        android:layout_height="533dp"
-        android:text="@string/pryr3"
-        android:textSize="16sp"
-        android:textColor="@color/navyblue"
-        android:fontFamily="sans-serif-condensed"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="80dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="87dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        app:layout_constraintVertical_bias="0.298"
-        app:layout_constraintHorizontal_bias="0.492" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/returnToMainButton"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:text="Return"
-        android:textColor="@color/navyblue"
-        android:background="@color/red"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="27dp"
-        android:text="0"
-        android:gravity="center_horizontal"
-        android:textColor="@color/navyblue"
-        android:textSize="13sp"
-        app:layout_constraintRight_toLeftOf="@+id/textView8"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="1dp"
-        android:layout_marginTop="16dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/textView7"
-        android:layout_marginRight="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="You are praying with"
-        android:textSize="13sp"
-        android:textColor="@color/navyblue"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="123dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
-        tools:layout_constraintBaseline_creator="1"
-        android:layout_marginRight="123dp" />
+                <Button
+                    android:id="@+id/returnToMainButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@color/red"
+                    android:text="Return"
+                    android:textColor="@color/navyblue" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="people."
-        android:textSize="13sp"
-        android:textColor="@color/navyblue"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
-        tools:layout_constraintBaseline_creator="1"
-        android:layout_marginRight="35dp" />
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You are praying with"
+                    android:textColor="@color/navyblue"
+                    android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="48dp"
-        android:layout_height="34dp"
-        android:text="@string/pryr3quote"
-        android:gravity="center"
-        android:textSize="17sp"
-        android:textColor="@color/navyblue"
-        android:fontFamily="sans-serif-condensed"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.498" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/navyblue"
+                    android:textSize="13sp" />
 
-</android.support.constraint.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="people."
+                    android:textColor="@color/navyblue"
+d                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="533dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/pryr3"
+                android:textColor="@color/navyblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/pryr3quote"
+                android:textColor="@color/navyblue"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
