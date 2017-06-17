@@ -42,8 +42,9 @@ public class Waiting4Prayer1 extends AppCompatActivity {
     public long count2 = 0;
     public long total = 0;
 
-
     Firebase mRef;
+
+    static boolean active = DataHolder.getData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -308,17 +309,17 @@ public class Waiting4Prayer1 extends AppCompatActivity {
 
         SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
 
-        count2 = sharedPreferences.getLong("count", 0);
+        count2 = sharedPreferences.getLong("count", 54);
 
-        total = pref.getLong("total", 0);
+        total = pref.getLong("total", 53);
 
         compositeListener.addOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                count2++;
+                count2--;
 
-                total++;
+                total--;
 
                 Intent intent = new Intent(Waiting4Prayer1.this, MainActivity.class);
 
@@ -451,44 +452,64 @@ public class Waiting4Prayer1 extends AppCompatActivity {
         }
         */
 
-        Intent change1 = new Intent(Waiting4Prayer1.this, Prayer1.class);
-        Intent change2 = new Intent(Waiting4Prayer1.this, Prayer2.class);
-        Intent change3 = new Intent(Waiting4Prayer1.this, Prayer3.class);
+        final Intent change1 = new Intent(Waiting4Prayer1.this, Prayer1.class);
+        final Intent change2 = new Intent(Waiting4Prayer1.this, Prayer2.class);
+        final Intent change3 = new Intent(Waiting4Prayer1.this, Prayer3.class);
 
-        long millis = System.currentTimeMillis();
-        Calendar c = Calendar.getInstance();
-        c.setTimeZone(TimeZone.getTimeZone("Africa/Casablanca"));
-        c.setTimeInMillis(millis);
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                while (!isInterrupted()) {
+                    try {
 
-        int hours = c.get(Calendar.HOUR_OF_DAY);
-        int minutes = c.get(Calendar.MINUTE);
-        int seconds = c.get(Calendar.SECOND);
+                        Thread.sleep(1000); // I don't think running it every 100 milliseconds makes a difference but I'll run it at 40
+                        // just in case to make it definitely smooth
 
-        startActivity(change3);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
 
-        if (hours == 12 && minutes == 0) { // starts activity at 8:00 am EST
-            if (seconds > 0) {
-                if (seconds < 5) {
-                    startActivity(change1);
+                                if (active == true) {
+
+                                    long millis = System.currentTimeMillis();
+                                    Calendar c = Calendar.getInstance();
+                                    c.setTimeZone(TimeZone.getTimeZone("Africa/Casablanca"));
+                                    c.setTimeInMillis(millis);
+
+                                    int hours = c.get(Calendar.HOUR_OF_DAY);
+                                    int minutes = c.get(Calendar.MINUTE);
+                                    int seconds = c.get(Calendar.SECOND);
+
+                                    if (hours == 23 && minutes == 4) { // starts activity at 8:00 am EST
+                                        if (seconds >= 0) {
+                                            if (seconds <= 20) {
+                                                startActivity(change1);
+                                            }
+                                        }
+                                    } else if (hours == 23 && minutes == 6) {
+                                        if (seconds >= 0) {
+                                            if (seconds <= 20) {
+                                                startActivity(change2);
+                                            }
+                                        }
+                                    } else if (hours == 23 && minutes == 8) {
+                                        if (seconds >= 0) {
+                                            if (seconds <= 20) {
+                                                startActivity(change3);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
-        }
-        else if (hours == 18 && minutes == 0) {
-            if (seconds >= 0) {
-                if (seconds <= 5) {
-                    startActivity(change2);
-                }
-            }
-        }
-        else if (hours == 1 && minutes == 0) {
-            if (seconds >= 0) {
-                if (seconds <= 5) {
-                    startActivity(change3);
-                }
-            }
-        }
-
-    }
+        };
+        t.start();
+}
 
     @Override
     protected void onPause() { // onPause() will be called whenever you leave your activity, temporary or permanently.
@@ -506,5 +527,23 @@ public class Waiting4Prayer1 extends AppCompatActivity {
         SharedPreferences.Editor edits = pref.edit();
         edits.putLong("total", total);
         edits.apply();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        DataHolder.setData(true);
+        active = DataHolder.getData();
+        System.out.println("bannananas " + active);
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        DataHolder.setData(false);
+        active = DataHolder.getData();
+        System.out.println("bannananas " + active);
+
     }
 }

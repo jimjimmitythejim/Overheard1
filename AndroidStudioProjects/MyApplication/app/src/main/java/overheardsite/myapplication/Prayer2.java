@@ -35,11 +35,17 @@ public class Prayer2 extends AppCompatActivity {
 
         numberOfPeople.setText(String.valueOf(count));
 
+        DataHolder.setData(false);
+
         goBack = (Button) findViewById(R.id.returnToMainButton);
 
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                DataHolder.setData(false);
+
+                DataHolder.setData(false);
 
                 Intent intent = new Intent(Prayer2.this, MainActivity.class);
 

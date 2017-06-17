@@ -21,55 +21,55 @@
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="108dp"
+            android:layout_height="40dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/biblequote"
-            android:textColor="@color/blue"
-            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:textSize="8sp"
             android:textStyle="italic|bold|normal"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"/>
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="1.375dp"
+            android:layout_marginRight="1.375dp"/>
 
         <TextClock
         android:id="@+id/textClock"
         android:layout_width="match_parent"
-        android:layout_height="41dp"
+        android:layout_height="15.375dp"
         android:gravity="center"
         android:format12Hour="hh:mm:ss a"
-            android:textSize="27sp"
+            android:textSize="10.125sp"
         android:fontFamily="sans-serif-light"
         android:textStyle="bold|normal"
-        android:textColor="@color/blue" />
+        android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/WhenToGather"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="37.5dp"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
             android:text="@string/description"
-            android:textColor="@color/blue"
-            android:textSize="19sp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"/>
+            android:textColor="@color/white"
+            android:textSize="7.125sp"
+            android:layout_marginTop="5.6125dp"
+            android:layout_marginLeft="1.675dp"
+            android:layout_marginRight="1.675dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginBottom="50dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_marginBottom="13.75dp"
+            android:layout_marginLeft="5.625dp"
+            android:layout_marginRight="5.625dp">
     <TextView
         android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="8:00 a.m. EST"
-        android:textSize="18sp"
-        android:textColor="@color/blue"
+        android:textSize="6.75sp"
+        android:textColor="@color/white"
         android:layout_weight="1"
         android:gravity="center" />
 
@@ -80,16 +80,16 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="2:00 p.m. EST"
-                android:textColor="@color/navyblue"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="6.75sp" />
 
             <TextView
         android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="9:00 p.m. EST"
-        android:textSize="18sp"
-        android:textColor="@color/blue"
+        android:textSize="6.75sp"
+        android:textColor="@color/white"
         android:layout_weight="1"
         android:gravity="center"/>
 
@@ -98,33 +98,33 @@
         <Button
             android:id="@+id/sendDataButton"
             android:layout_width="match_parent"
-            android:layout_height="73dp"
+            android:layout_height="23dp"
             android:background="@color/red"
             android:layout_gravity="center"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginRight="4.5dp"
             android:text="Join Friends in Prayer"
-            android:textColor="@color/navyblue"
-            android:textSize="@dimen/button_fontSize" />
+            android:textColor="@color/white"
+            android:textSize="7sp" />
 
         <TextView
         android:id="@+id/textView18"
         android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:textColor="@color/blue"
+        android:layout_height="19.125dp"
+        android:textColor="@color/white"
         android:gravity="center"
-        android:textSize="16sp"
+        android:textSize="6sp"
         android:text="TOTAL NUMBER OF PRAYERS SO FAR:"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="7.5dp" />
 
         <TextView
             android:id="@+id/tot"
             android:layout_width="match_parent"
-            android:layout_height="33dp"
+            android:layout_height="12.375dp"
             android:gravity="center_horizontal"
             android:text="0"
-            android:textColor="@color/blue"
-            android:textSize="16sp" />
+            android:textColor="@color/white"
+            android:textSize="6sp" />
 
     </LinearLayout>
         </ScrollView>

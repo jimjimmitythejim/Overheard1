@@ -47,6 +47,8 @@ public class Prayer3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                DataHolder.setData(false);
+
                 Intent intent = new Intent(Prayer3.this, MainActivity.class);
 
                 startActivity(intent);
