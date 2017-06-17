@@ -48,23 +48,6 @@ public class Prayer2 extends AppCompatActivity {
             }
         });
 
-        // the following code should cause the Prayer1 activity to close and go to the HowManyPrayed activity at
-        // 2:03 and 0 seconds everyday; 2:00 is when the prayer would be and 2:03 is when it would end
-        Calendar calendar = Calendar.getInstance();
-
-        // will set calendar to 2:03 if the person's timezone is that of New York
-        TimeZone tz = TimeZone.getDefault();
-
-        calendar.set(Calendar.HOUR, 14);
-        calendar.set(Calendar.MINUTE, 1);
-        calendar.set(Calendar.SECOND, 0);
-
-        Intent intent = new Intent(Prayer2.this, HowManyPrayed.class);
-
-        PendingIntent pendingIntent = PendingIntent.getActivity(Prayer2.this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
-
-        ((AlarmManager) getSystemService(ALARM_SERVICE)).set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
-
         /* new CountDownTimer(30000, 1000) {
 
     public void onTick(long millisUntilFinished) {
