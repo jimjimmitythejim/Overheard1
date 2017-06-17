@@ -31,6 +31,8 @@ public class Prayer1 extends AppCompatActivity {
 
         numberOfPeople.setText(String.valueOf(count));
 
+        DataHolder.setData(false);
+
         Button goBack = (Button) findViewById(R.id.returnToMainButton);
 
         goBack.setOnClickListener(new View.OnClickListener() {

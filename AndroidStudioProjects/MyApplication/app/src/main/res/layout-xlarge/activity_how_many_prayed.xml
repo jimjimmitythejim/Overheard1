@@ -8,16 +8,20 @@
     tools:context="overheardsite.myapplication.HowManyPrayed"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:orientation="vertical"
         android:layout_marginTop="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="46dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <TextView
@@ -27,8 +31,8 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="You prayed with"
-                android:textColor="@color/navyblue"
-                android:textSize="23sp" />
+                android:textColor="@color/blue"
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/Number"
@@ -37,8 +41,8 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="0"
-                android:textColor="@color/navyblue"
-                android:textSize="23sp" />
+                android:textColor="@color/blue"
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -47,66 +51,79 @@
                 android:gravity="center_horizontal"
                 android:layout_weight="1"
                 android:text="people."
-                android:textColor="@color/navyblue"
-                android:textSize="23sp" />
+                android:textColor="@color/blue"
+                android:textSize="40sp" />
 
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
-            android:layout_height="195dp"
+            android:layout_height="350dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
+            android:lineSpacingExtra="5dp"
             android:text="Spread the word so that the whole world can join together in prayer. Also, if you have any suggestions or good prayers you would like to be prayed, contact us through the links below. May God bless you."
-            android:textColor="@color/navyblue"
-            android:textSize="22sp"
-            android:layout_weight="0.17" />
+            android:textColor="@color/blue"
+            android:textSize="39sp"
+            android:layout_weight="0.50" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.4"
             android:gravity="center"
             android:text="@string/email"
-            android:textColor="@color/navyblue"
-            android:textSize="20sp" />
+            android:textColor="@color/blue"
+            android:textSize="39sp" />
 
         <TextView
             android:id="@+id/facebookpage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_weight="0.4"
             android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
             android:text="@string/facebook"
-            android:textColor="@color/navyblue"
-            android:textSize="20sp" />
+            android:textColor="@color/blue"
+            android:textSize="39sp" />
 
         <TextView
             android:id="@+id/twitter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_weight="0.4"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="@string/twitter"
-            android:textColor="@color/navyblue"
-            android:textSize="20sp" />
+            android:textColor="@color/blue"
+            android:textSize="39sp" />
 
         <Button
             android:id="@+id/returnToMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:background="@color/red"
             android:text="Return"
-            android:textColor="@color/navyblue"
-            android:textSize="17sp"
+            android:textColor="@color/blue"
+            android:textSize="37sp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="40dp"
             android:layout_marginTop="25dp"
-            android:layout_weight="0.65" />
+            android:layout_weight="0.55" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
 
 </LinearLayout>
+    </ScrollView>
     </LinearLayout>

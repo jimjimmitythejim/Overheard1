@@ -5,13 +5,12 @@ package overheardsite.myapplication;
  */
 
 public class DataHolder {
-    private static long data2;
-    private static long data;
+    private static boolean data = true;
 
-    public static long getData() {
+    public static boolean getData() {
         return data;
     }
-    public static void setData(long data3) {
+    public static void setData(boolean data3) {
         data = data3;
     }
 }

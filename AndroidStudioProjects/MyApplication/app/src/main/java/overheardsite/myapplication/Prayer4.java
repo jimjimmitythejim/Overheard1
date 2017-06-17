@@ -22,7 +22,6 @@ public class Prayer4 extends AppCompatActivity {
 
         TextView numberOfPeople;
         numberOfPeople = (TextView) findViewById(R.id.textView5);
-        numberOfPeople.setText(Long.toString(DataHolder.getData()));
 
         goBack = (Button) findViewById(R.id.returnToMainButton);
 

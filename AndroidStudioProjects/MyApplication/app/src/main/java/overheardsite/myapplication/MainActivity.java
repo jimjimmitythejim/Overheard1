@@ -507,9 +507,9 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
 
-        count2 = sharedPreferences.getLong("count", 0);
+        count2 = sharedPreferences.getLong("count", 370002);
 
-        total = pref.getLong("total", 0);
+        total = pref.getLong("total", 342314);
 
         groupListener.addOnClickListener(new View.OnClickListener() {
                 @Override
@@ -641,7 +641,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onPause();
 
-
         SharedPreferences sharedPreferences = getSharedPreferences("counter", Context.MODE_PRIVATE);
 
         SharedPreferences pref = getSharedPreferences("countTotal", Context.MODE_PRIVATE);
@@ -654,6 +653,5 @@ public class MainActivity extends AppCompatActivity {
         edits.putLong("total", total);
         edits.apply();
 
-        editor.commit();
     }
 }
