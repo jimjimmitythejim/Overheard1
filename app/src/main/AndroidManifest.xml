@@ -68,7 +68,9 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".Prayer17" />
         <activity android:name=".Prayer18" />
-        <activity android:name=".Prayer19"></activity>
+        <activity android:name=".Prayer19" />
+        <activity android:name=".Prayer20" />
+        <activity android:name=".Prayer21"></activity>
     </application>
 
 </manifest>
