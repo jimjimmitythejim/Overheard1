@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Pray</string>
+    <string name="send_data">Send Data</string>
+    <string name="join_friends_in_prayer">Join Friends in Prayer?</string>
+    <string name="Return">Return</string>
+    <string name="our_father">Our Father, who art in Heaven, hallowed by Thy name. Thy kingdom come, Thy will be done, on Earth as it is in Heaven.
+    Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us
+    not into temptation, but deliver us from evil.</string>
+    <string name="description">"Gather everyday at the times below specific to your area in order to join others in prayer and work to bring God's kingdom to Earth."</string>
+    <string name="biblequote">\"For where two or three gather together in My name, there I am with them.\"</string>
+    <string name="pryr1">"Lord, grant me tenacious winsome courage as I go through this day. When we are tempted to give up, help me to keep going. Grant me a cheerful spirit when things don't go my way. And give me courage to do whatever needs to be done. In Jesus' name, Amen."</string>
+    <string name="pryr1quote">"\"For God did not give us a spirit of timidity, but a spirit of power, of love and self-discipline.\" (2 Timothy 1:7)"</string>
+    <string name="pryr3">"Lord,5
+        people12 are16 often22 unreasonable,36 irrational,48 and52 self-centered.67 Help72 us75 to78 forgive86 them91 anyway.99
+        Even104 if107 we110 are114 kind,120 people127 may131 accuse138 us141 of144 selfish,153 ulterior162 motives.171 Help176 us179 to182 be185 kind190 anyway.198
+        If201 we204 are208 successful,220 we223 will228 win232 some237 unfaithful248 friends256 and260 some265 genuine273 enemies.282 Help287 us290 to293 succeed301 anyway.309
+        If312 we315 are319 honest326 and330 sincere338 people345 may349 deceive357 us.361 Help367 us370 to373 be376 honest383 and387 sincere395 anyway.403
+        What408 we411 spend417 years423 creating,433 others440 could446 destroy454 overnight.465 Help470 us473 to476 create483 anyway.491
+        If494 we497 find502 serenity511 and515 happiness,526 some531 may535 be538 jealous.547 Help552 us555 to558 be561 happy567 anyway.575
+        The579 good584 we587 do590 today,597 will602 often608 be611 forgotten.622 Help627 us630 to633 do636 good641 anyway.649
+        Even654 if657 we660 give665 the669 best674 we677 have,683 it686 will691 never697 be700 enough.708 Help713 us716 to719 give724 our728 best733 anyway.741
+        Help746 us749 in752 these758 ways763 because771 in774 the778 end,783 everything794 is797 between805 us808 and812 You.817 It820 was824 never830 between838 us841 and845 them850 anyway.858"</string>
+    <string name="pryr3quote">Amen</string>
+    <string name="pryr4">"Come, Holy Spirit, fill the hearts of your faithful, and enkindle in them the fire of your love.
+Send forth your Spirit and they shall be created And you shall renew the face of the earth.
+O God, who has taught the hearts of the faithful by the light of the Holy Spirit, grant that by the gift of the same Spirit we may be always truly wise and ever rejoice in his consolation. Through Christ our Lord. Amen."</string>
+    <string name="pryr4quote">"Flesh gives birth to flesh, but the Spirit gives birth to spirit. You should not be surprised at my saying, ‘You must be born again.’ The wind blows wherever it pleases. You hear its sound, but you cannot tell where it comes from or where it is going. So it is with everyone born of the Spirit. (John 3:6–8)"</string>
+    <string name="one">8:00 a.m.</string>
+    <string name="two">2:00 p.m.</string>
+    <string name="three">9:00 p.m.</string>
+    <string name="email"><a href="mailto:goinpeace1776@gmail.com">Email us at goinpeace1776@gmail.com</a></string>
+    <string name="facebook"><a href="https://www.facebook.com/Pray-1851643221822361/">Post on our Facebook page Pray</a></string>
+    <string name="twitter"><a href="https://twitter.com/AidsSkrillexx">Tweet us @AidsSkrillexx</a></string>
+    <string name="title_activity_prayer6">Prayer6</string>
+</resources>

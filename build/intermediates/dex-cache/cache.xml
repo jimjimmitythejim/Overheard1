@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\290bc30d687a9b24031204863cebaf38f5fe81bc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_ca4b7dff05c098f983b8d0571170d2ca6d7b6e88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\e85840465f3b8ace925c5f04b38b0e236a4ff401\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_34f7db447cb38fffd923949335b18d9df218cd5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.5.2\f19f10d6276aa0b380e2d05d2ab3272d693a5433\firebase-client-android-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f19f10d6276aa0b380e2d05d2ab3272d693a5433">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\firebase-client-android-2.5.2_863307bdbc0bc0445ba20ddb24f5eaada1ec3be5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\35315043557db1d60b2d954f2d88988d6e5058d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_8c8fdb6c761826199b492d364859a34f3fc0b4f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\934cbc963f53834f202f6419b63d34c02a32fbbd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_d4d315d4afed92642b56c8766f7ddf38b931f804.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\52c8b19620281853f48d863bc981001afc048603\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_29af15ab76c4d103eb8f247df67c3084fea5d769.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\93ffb13f80f963a57ea248d5ae10228079cc5188\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_4cc1dff39f33eb8328cb73815173d5ede9ff5265.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-databind-2.2.2_ab6b7a26f377f8b29f933f1666818c567ba5bbc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.2.2_b0584d3c20e0927b9a50bc11722d65ac2a4fdeff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\720572d62bc3d7ccd3446a35b72145220934d540\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_db635e146ab8aebe4a8ca54270da0147c98b43ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\b00e87c5330554263da48c56caaf5b1f30693d43\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_9a73e6640e3d8d8957d3261544b91994177662ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\1bfa7a0cc8cf35878df21d409d30ccf8d715c7b5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="54933c89f90a872aa342004e82b23e776fe12736">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_cf80095c2dcb2cfcd2641e2d60b202a6c19a5afd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\358d4a828283caf59ae995bb549d8f9d6b16e5ea\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_d274af810d6c1451c202634ca921f023380598b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\687d56fa98e1c363beb04119992e07238d73ba8c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_64f0b14a4a5b0965315fcbdc9bbfd344cb1cf489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_eedfd7cef3c33a77a37b30858b53a5f9c33c4285.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\174a9e6e5dcba53580af65a6c3b74abcf33d523e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_aee06f8162105bf6a170ba1ea7352b2bdc8953b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\d1ac30aec97885642adcb5fe0789b84d0fc8ef21\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_efeb6b7bd8422f5ca918244be3da5a8931f7f21b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_af78cb914bece3982bd7df94d7546def41c1a244.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\07943850569832ab82e4cffe49dc7fd058f5856a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_657cbb25a33ce19400676b1dc7a2164fde3713c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\8de63aa0fe18769ceb29309cca474d37c83cf680\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_fa0d7da48998aea61c019e7cd2b37fc81067cc3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\b4a1af3dd75acc4103e7c22ac29eb6f6df84fdce\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_adc3581587b123e777c5b850fddd9f3f78594ff3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-core-2.2.2_fd210b1d11173091ddd55e0cdac37c55fd0e6cea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\4902905d100a7add566e2cfd4499fbc2a5db9dba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_ba111147d186c13de7d1c69103a64b935a67314e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\f60c147857efbc4aba43207fa92374c07a680df0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_859ba3278323256a464b1739bb28cb5c630b7578.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\ec15e505ec24a2c2f5a4c34d938cfb303b2af897\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_871615b551cadfec2c2094473d49020b6d497471.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\f932129b99cc7c900905918e3c20e781746baf8a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_f135d98fddd663030f1a365d4f3c04c9b9c611f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\42fbcf7a57538b2a361dd06025dc4607e0f6e21c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_b9e26849fb80cded3c8cc11806c88379c23c49a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\97f98c6f12fb691176aa6c3e58f6ec12aafa0063\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_149581e82cd02b0baf97f9176e6713e1014bec31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.5.2\91731b8f5868a3e8a8a773f29b8d06b5c358f5bb\firebase-client-jvm-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="91731b8f5868a3e8a8a773f29b8d06b5c358f5bb">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\firebase-client-jvm-2.5.2_958621c1dc16b385b1a3889d40a3ed00b3d86e7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\8c288a2a32c87bc3ff2d92c3a50e395bcc784fee\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_c2d9bb12df51ca734cd89bbadcbadb9ff1618511.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.12\6ec0bbd3e161a73ed672284b587fd32309a86d7a\tubesock-0.0.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\tubesock-0.0.12_8447171d99e1b3b6a835ae4c0767514ed959df82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\3376ef64fd50f9fa53a8e5801f9b6f02e8b0e277\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_519f36efd8ca9624702bc042acb426ce88231411.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\John\.android\build-cache\ec312a5b248f8a2b9437f9b63cd629ca17b5a8e7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\John\Documents\PrayerUpdated-master\PrayerUpdated-master\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\classes_b8ac72d11ab4d23f916d2cd26be4a61aae419903.jar" />
+    </item>
+
+</items>
